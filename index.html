@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncommon Hacks</title>
+    <meta name="description" content="Learn and build with technology with Uncommon Hacks.">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  <body>
+    <div id = "mainContainer" class="grid-container">
+      <div id="cell1">
+        <div id="im1" class="imageDiv"> 
+          <img src="images/antonSerious.png" class="headshot">
+        </div>
+        <div id="im1-backside" class="imageDiv-back"> 
+          <img src="images/antonFunny.png" class="headshot">
+        </div>
+      </div>
+    <div id="cell2">
+        <div id="im2" class="imageDiv"> 
+          <img src="images/dashaSerious.png" class="headshot">
+        </div>
+        <div id="im2-backside" class="imageDiv-back"> 
+          <img src="images/dashaFunny.png" class="headshot">
+        </div>
+      </div>
+      <div id="cell3">
+        <div id="im3" class="imageDiv"> 
+          <img src="images/anneSerious.png" class="headshot">
+        </div>
+        <div id="im3-backside" class="imageDiv-back"> 
+          <img src="images/anneFunny.png" class="headshot">
+        </div>
+      </div>
+        <div id="cell4">
+        <div id="im4" class="imageDiv"> 
+          <img src="images/nickSerious.png" class="headshot">
+        </div>
+        <div id="im4-backside" class="imageDiv-back"> 
+          <img src="images/nickFunny.png" class="headshot">
+        </div>
+      </div>
+       <div id="cell5">
+        <div id="im5" class="imageDiv"> 
+          <img src="images/samanthaSerious.jpg" class="headshot">
+        </div>
+        <div id="im5-backside" class="imageDiv-back"> 
+          <img src="images/samanthaFunny.jpg" class="headshot">
+        </div>
+      </div>
+
+      <div id="cell6">
+        <div id="im6" class="imageDiv"> 
+          <img src="images/joeSerious.png" class="headshot">
+        </div>
+        <div id="im6-backside" class="imageDiv-back"> 
+          <img src="images/joeFunny.png" class="headshot">
+        </div>
+      </div>
+
+  <div id="c1Div">
+    <span id="c1" class="caption1">Anton Outkine</span>
+  </div>
+  <div id="c2Div">
+    <span id="c2" class="caption1">Daria Shifrina</span>
+  </div>
+  <div id="c3Div">
+    <span id="c3" class="caption1">Anne Havlik</span>
+  </div>
+  <div id="c4Div">
+    <span id="c4" class="caption1">Nick Liu</span>
+  </div>
+  <div id="c5Div">
+    <span id="c5" class="caption1">Samantha Chen</span>
+  </div>
+  <div id="c6Div">
+    <span id="c6" class="caption1">Joe Aulicino</span>
+  </div>
+
+
+
+  </div>
+
+  <script>
+    var magenta = "#a37cee";
+    var other = "#82EAFF";
+    var speed = 400;
+    $("#im1-backside").slideUp(speed);
+    $("#im1").slideDown(speed)
+    $("#im2-backside").slideUp(speed);
+    $("#im2").slideDown(speed)
+    $("#im3-backside").slideUp(speed);
+    $("#im3").slideDown(speed)
+    $("#im4-backside").slideUp(speed);
+    $("#im4").slideDown(speed)
+    $("#im5-backside").slideUp(speed);
+    $("#im5").slideDown(speed)
+    $("#im6-backside").slideUp(speed);
+    $("#im6").slideDown(speed)
+          $("#cell1").hover(function (){
+                    $("#im1").slideUp(speed);
+                    $("#im1-backside").slideDown(speed)
+              },
+              function (){
+                    $("#im1-backside").slideUp(speed);
+                    $("#im1").slideDown(speed)
+              }
+          )
+          $("#cell2").hover(function (){
+                    $("#c2").text(' "let it rip" ');
+                    $("#im2").slideUp(speed);
+                    $("#im2-backside").slideDown(speed)
+              },
+              function (){
+                    $("#c2").text(' Daria Shifrina ');
+                    $("#im2-backside").slideUp(speed);
+                    $("#im2").slideDown(speed)
+              }
+          )
+          $("#cell3").hover(function (){
+                    $("#c3").text(' "ope" ');
+                    $("#im3").slideUp(300);
+                    $("#im3-backside").slideDown(300)
+              },
+              function (){
+                    $("#c3").text(' Anne Havlik ');
+                    $("#im3-backside").slideUp(300);
+                    $("#im3").slideDown(300)
+              }
+          )
+          $("#cell4").hover(function (){
+                    document.getElementById("c4").style.fontSize = "1em";
+                    $("#c4").text(' "Sometimes, the light at the end of the tunnel is a train." ');
+                    $("#im4").slideUp(speed);
+                    $("#im4-backside").slideDown(speed)
+              },
+              function (){
+                    document.getElementById("c4").style.fontSize = "1em";
+                    $("#c4").css("font-size: 1em")
+                    $("#c4").text(' Nick Liu ');
+                    $("#im4-backside").slideUp(speed);
+                    $("#im4").slideDown(speed)
+              }
+          )
+          $("#cell5").hover(function (){
+                    $("#c5").text(' "I am afraid of worms but not the ones on a string." ');
+                    $("#im5").slideUp(speed);
+                    $("#im5-backside").slideDown(speed)
+              },
+              function (){
+                    $("#c5").text(' Samantha Chen ');
+                    $("#im5-backside").slideUp(speed);
+                    $("#im5").slideDown(speed)
+              }
+          )
+          $("#cell6").hover(function (){
+                    $("#c6").text(' "Your limitation-its only your imagination." ');
+                    $("#im6").slideUp(speed);
+                    $("#im6-backside").slideDown(speed)
+              },
+              function (){
+                    $("#c6").text(' Joe Aulicino ');
+                    $("#im6-backside").slideUp(speed);
+                    $("#im6").slideDown(speed)
+              }
+          )
+      
+  </script>
+  </body>
