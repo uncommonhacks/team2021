@@ -97,30 +97,37 @@
         </div>
       </div>
   <div id="cell10">
-        <div id="im9" class="imageDiv"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im10" class="imageDiv"> 
+          <img src="images/spencerSerious.png" class="headshot">
         </div>
-        <div id="im9-backside" class="imageDiv-back"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im10-backside" class="imageDiv-back"> 
+          <img src="images/spencerFunny.png" class="headshot">
         </div>
       </div>
   <div id="cell11">
-        <div id="im9" class="imageDiv"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im11" class="imageDiv"> 
+          <img src="images/jimSerious.jpg" class="headshot">
         </div>
-        <div id="im9-backside" class="imageDiv-back"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im11-backside" class="imageDiv-back"> 
+          <img src="images/jimFunny.png" class="headshot">
         </div>
       </div>
   <div id="cell12">
-        <div id="im9" class="imageDiv"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im12" class="imageDiv"> 
+          <img src="images/angelaShaSerious.png" class="headshot">
         </div>
-        <div id="im9-backside" class="imageDiv-back"> 
-          <img src="images/test.png" class="headshot">
+        <div id="im12-backside" class="imageDiv-back"> 
+          <img src="images/angelaShaFunny.png" class="headshot">
         </div>
       </div>
-
+  <div id="cell13">
+        <div id="im13" class="imageDiv"> 
+          <img src="images/kateSerious.jpg" class="headshot">
+        </div>
+        <div id="im13-backside" class="imageDiv-back"> 
+          <img src="images/kateFunny.jpg" class="headshot">
+        </div>
+      </div>
 
   <div id="c1Div">
     <span id="c1" class="caption1">Anton Outkine</span>
@@ -152,15 +159,19 @@
     <span id="c9" class="caption1">Angela Liu</span>
   </div>
   <div id="c10Div">
-    <span id="c10" class="caption1">Test</span>
+    <span id="c10" class="caption1">Spencer Ng</span>
   </div>
     <div id="c11Div">
-    <span id="c11" class="caption1">Test</span>
+    <span id="c11" class="caption1">Jim Liu</span>
   </div>
     <div id="c12Div">
-    <span id="c12" class="caption1">Test</span>
+    <span id="c12" class="caption1">Angela Sha</span>
   </div>
-
+  <div id="c13Div">
+    <span id="c13" class="caption1">Kate Lu</span>
+  </div>
+  </div>
+    
 
   </div>
 
@@ -192,11 +203,16 @@
     $("#im11").slideDown(speed)
     $("#im12-backside").slideUp(speed);
     $("#im12").slideDown(speed)
+    $("#im13-backside").slideUp(speed);
+    $("#im13").slideDown(speed)
           $("#cell1").hover(function (){
+
+                    $("#c1").text(' "First, to Saturn; then, to Starbucks." ');
                     $("#im1").slideUp(speed);
                     $("#im1-backside").slideDown(speed)
               },
               function (){
+                    $("#c1").text(' Anton Outkine ');
                     $("#im1-backside").slideUp(speed);
                     $("#im1").slideDown(speed)
               }
@@ -293,36 +309,47 @@
               }
           )
           $("#cell10").hover(function (){
-                    $("#c10").text(' "Test caption" ');
+                    $("#c10").text(' "Its kind of fun to do the impossible" ');
                     $("#im10").slideUp(speed);
                     $("#im10-backside").slideDown(speed)
               },
               function (){
-                    $("#c10").text(' Test ');
+                    $("#c10").text(' Spencer Ng ');
                     $("#im10-backside").slideUp(speed);
                     $("#im10").slideDown(speed)
               }
           )
           $("#cell11").hover(function (){
-                    $("#c11").text(' "Test caption" ');
+                    $("#c11").text(' "I like trains" ');
                     $("#im11").slideUp(speed);
                     $("#im11-backside").slideDown(speed)
               },
               function (){
-                    $("#c11").text(' Test ');
+                    $("#c11").text(' Jim Liu ');
                     $("#im11-backside").slideUp(speed);
                     $("#im11").slideDown(speed)
               }
           )
-          $("#cell10").hover(function (){
-                    $("#c12").text(' "Test caption" ');
+          $("#cell12").hover(function (){
+                    $("#c12").text(' "oui oui baguette" ');
                     $("#im12").slideUp(speed);
                     $("#im12-backside").slideDown(speed)
               },
               function (){
-                    $("#c12").text(' Test ');
+                    $("#c12").text(' Angela Sha ');
                     $("#im12-backside").slideUp(speed);
                     $("#im12").slideDown(speed)
+              }
+          )
+          $("#cell13").hover(function (){
+                    $("#c13").text(' "snow tastes good with maple syrup" ');
+                    $("#im13").slideUp(speed);
+                    $("#im13-backside").slideDown(speed)
+              },
+              function (){
+                    $("#c13").text(' Kate Lu ');
+                    $("#im13-backside").slideUp(speed);
+                    $("#im13").slideDown(speed)
               }
           )
       

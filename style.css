@@ -189,7 +189,7 @@ html, body {
 	width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #A8E479;
+    background: #82EAFF;
 }
 #cell11{
 	position:relative;
@@ -198,7 +198,7 @@ html, body {
 	width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #A8E479;
+    background: #82EAFF;
 }
 #cell12{
 	position:relative;
@@ -207,7 +207,16 @@ html, body {
 	width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #A8E479;
+    background: #82EAFF;
+}
+#cell13{
+	position:relative;
+	grid-row: 5;
+	grid-column:3;
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #82EAFF;
 }
 #im1{
 	grid-row: 1;
@@ -345,6 +354,12 @@ html, body {
 	grid-column-start: 2;
 	text-align: center;
 }
+#c13{
+	display: grid;
+	grid-row-start: 4;
+	grid-column-start: 3;
+	text-align: center;
+}
 #c4Div{
 }
 #c5Div{
@@ -380,18 +395,24 @@ html, body {
 #c10Div{
 	grid-row-start: 4;
 	grid-column-start: 1;
-    background: #A8E479;
+    background: #82EAFF;
     height: 3vw;
 }
 #c11Div{
 	grid-row-start: 6;
 	grid-column-start: 1;
-    background: #A8E479;
+    background: #82EAFF;
     height: 3vw;
 }
 #c12Div{
 	grid-row-start: 6;
 	grid-column-start: 2;
-    background: #A8E479;
+    background: #82EAFF;
+    height: 3vw;
+}
+#c13Div{
+	grid-row-start: 6;
+	grid-column-start: 3;
+    background: #82EAFF;
     height: 3vw;
 }
