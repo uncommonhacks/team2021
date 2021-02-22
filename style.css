@@ -538,7 +538,7 @@ html, body {
 .grid-container{
 	display: inline-grid;
 	grid-template-columns: var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth);
-	grid-template-rows: var(--cwidth) 16vh var(--cwidth) 16vh;
+	grid-template-rows: var(--cwidth) 36vh var(--cwidth) 36vh;
 	overflow: hidden;
 }
 #facebook{
