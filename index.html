@@ -227,15 +227,20 @@
     $("#im14").slideDown(speed)
     if($(window).width() > 1201){
           $("#cell1").hover(function (){
+               if($(window).width() > 1201){
 
                     $("#c1").text(' "First, to Saturn; then, to Starbucks." ');
                     $("#im1").slideUp(speed);
                     $("#im1-backside").slideDown(speed)
+               }
               },
               function (){
+                if($(window).width() > 1201){
+
                     $("#c1").text(' Anton Outkine ');
                     $("#im1-backside").slideUp(speed);
                     $("#im1").slideDown(speed)
+                }
               }
           )
           $("#cell2").hover(function (){
