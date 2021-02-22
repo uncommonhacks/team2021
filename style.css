@@ -58,32 +58,22 @@ html, body {
 	grid-template-rows: var(--cwidth) var(--capheight) var(--cwidth) var(--capheight);
 	overflow: hidden;
 }
-#T{
-	margin-left: 0;
-	margin-right: 0;
-	color: #FFF;
-}
-#E{
-		padding-left: 0;
-	padding-right: 0;
-	color: #FFF;
-}
-
-#A{
-		padding-left: 0;
-	padding-right: 0;
-	color: #FFF;
-}
-
-#M{
-		padding-left: 0;
-	padding-right: 0;
-	color: #FFF;
-}
 
 
 @media (min-width: 1201px) {
-
+#titleText{
+	position: absolute;
+	font-size: calc( var(--bannerheight) * 0.8);
+	top: calc( var(--bannerheight) *0.1);
+	left: calc( var(--bannerheight) *0.1);
+}
+#teamTitle{
+	position: absolute;
+	font-size: calc( var(--bannerheight) * 0.8);
+	top: calc( var(--bannerheight) *0.1);
+	left:  calc( var(--bannerheight) * 6 * 0.875);
+	color: white;
+}
 #title{
 	top: 0;
 	left: 0;
@@ -92,7 +82,6 @@ html, body {
 	height: var(--bannerheight);
 	background: #FFA373;
 	font-family: Silkscreen;
-	font-size: calc( var(--bannerheight) * 0.8);
 	z-index:1;
 	border-bottom: 1px solid white;
 }
@@ -499,10 +488,23 @@ html, body {
 	grid-column-start: 7;
     background: #A8E479;
     height: 100%;
+    text-align: center;
 	}
 }
 @media (min-width: 1001px) and (max-width: 1201px) {
-
+#titleText{
+	position: absolute;
+	font-size: calc( var(--bannerheight) * 0.8);
+	top: calc( var(--bannerheight) *0.1);
+	left: calc( var(--bannerheight) *0.1);
+}
+#teamTitle{
+	position: absolute;
+	font-size: calc( var(--bannerheight) * 0.8);
+	top: calc( var(--bannerheight) *0.1);
+	left:  calc( var(--bannerheight) * 6 * 0.875);
+	color: white;
+}
 #title{
 	top: 0;
 	left: 0;
@@ -538,8 +540,9 @@ html, body {
 .grid-container{
 	display: inline-grid;
 	grid-template-columns: var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth) var(--cwidth);
-	grid-template-rows: var(--cwidth)  8vh var(--cwidth) 8vh;
+	grid-template-rows: var(--cwidth) 12vh var(--cwidth) min(var(--cwidth),12vh);
 	overflow: hidden;
+	font-size 4vh: 
 }
 #facebook{
 }
@@ -924,10 +927,14 @@ html, body {
 	grid-column-start: 7;
     background: #A8E479;
     height: 100%;
+    text-align: center;
 	}
 }
 /* mobile*/
 @media (max-width: 1000px) {
+	#teamTitle{
+		color: white;
+	}
 	#title{
 		top: 0;
 		left: 0;
@@ -943,7 +950,7 @@ html, body {
 	}
 	#logo{
 		position: absolute;
-		top: calc(17vh + 56vw * 7 + 30vw);
+		top: calc(17vh + 56vw * 7 + 20vh);
 		height: 30vw;
 		width: 30vw;
 		z-index:3;

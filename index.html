@@ -14,10 +14,7 @@
   </head>
   <body>
     <div id = "title"><span id="titleText">Uncommon</span>
-    <span id="T">T</span><!--
-    --><span id="E">E</span><!--
-    --><span id="A">A</span><!--
-    --><span id="M">M</span>
+    <span id="teamTitle">Team</span>
     </div>
     <div id = "bottomTitle">
     <a href="https://www.messenger.com/t/1129538927063790/?messaging_source=source%3Apages%3Amessage_shortlink"><img class="icon" id = "messenger" src="images/messenger.svg"></a>
@@ -132,7 +129,7 @@
           <a href="https://www.linkedin.com/in/kate-lu-a8bb6517b/"><img src="images/kateSerious.jpg" class="headshot"></a>
         </div>
         <div id="im13-backside" class="imageDiv-back"> 
-          <a href="https://www.linkedin.com/in/kate-lu-a8bb6517b/"><img src="images/kateFunny.jpg" class="headshot"></a>
+          <a href="https://www.linkedin.com/in/kate-lu-a8bb6517b/"><img src="images/kateFunny.JPG" class="headshot"></a>
         </div>
       </div>
     <div id="cell14">
@@ -145,7 +142,7 @@
     </div>
 
   <div id="c1Div">
-    <span id="c1" class="caption1">Anton Outkine</span>
+    <span id="c1" class="caption1">Anton Outkine </span>
   </div>
   <div id="c2Div">
     <span id="c2" class="caption1">Daria Shifrina</span>
@@ -225,17 +222,18 @@
     $("#im13").slideDown(speed)
     $("#im14-backside").slideUp(speed);
     $("#im14").slideDown(speed)
+    if($(window).width() > 1201){
           $("#cell1").hover(function (){
-
                     $("#c1").text(' "First, to Saturn; then, to Starbucks." ');
                     $("#im1").slideUp(speed);
                     $("#im1-backside").slideDown(speed)
+       
               },
               function (){
-                    $("#c1").text(' Anton Outkine ');
+                    document.getElementById("c1").textContent =' Anton Outkine ';
                     $("#im1-backside").slideUp(speed);
                     $("#im1").slideDown(speed)
-              }
+            }
           )
           $("#cell2").hover(function (){
                     $("#c2").text(' "let it rip" ');
@@ -323,7 +321,7 @@
                     $("#im9-backside").slideDown(speed)
               },
               function (){
-                    $("#c9").text(' Angelia Liu ');
+                    $("#c9").text(' Angela Liu ');
                     $("#im9-backside").slideUp(speed);
                     $("#im9").slideDown(speed)
               }
@@ -383,6 +381,10 @@
                     $("#im14").slideDown(speed)
               }
           )
-      
+    }
+    else{
+     console.log("Screen too small") 
+    }
+  setInterval(function(){ 1; }, 3000);    //used to make javascript dynamically update with page width
   </script>
   </body>
