@@ -230,13 +230,13 @@
                     $("#c1").text(' "First, to Saturn; then, to Starbucks." ');
                     $("#im1").slideUp(speed);
                     $("#im1-backside").slideDown(speed)
-               }
+       
               },
               function (){
                     $("#c1").text(' Anton Outkine ');
                     $("#im1-backside").slideUp(speed);
                     $("#im1").slideDown(speed)
-              }
+            }
           )
           $("#cell2").hover(function (){
                     $("#c2").text(' "let it rip" ');
@@ -384,6 +384,9 @@
                     $("#im14").slideDown(speed)
               }
           )
+    }
+    else{
+     console.log("Screen too small") 
     }
   setInterval(function(){ 1; }, 3000);    //used to make javascript dynamically update with page width
   </script>
